@@ -105,7 +105,7 @@ def try_login(username, password):
     return user
 
 def logged_in():
-    global username_box, password_box, login_btn, logout_btn, register_btn, logged_user, space, new_task_box, edit_task_btn, delete_task_btn, new_task_btn, task_var, edited_task
+    global username_box, password_box, login_btn, logout_btn, register_btn, logged_user, space, new_task_box, edit_task_btn, delete_task_btn, new_task_btn, task_var, edited_task, edit_task_box
 
     username_box.destroy()
     password_box.destroy()
@@ -222,7 +222,7 @@ def edit_task():
     display_tasks() 
 
 def logout():
-    global tasks_shown, username_box, password_box, login_btn, logout_btn, register_btn, logged_user, space, new_task_box, edit_task_btn, delete_task_btn, new_task_btn
+    global edit_task_box, tasks_shown, username_box, password_box, login_btn, logout_btn, register_btn, logged_user, space, new_task_box, edit_task_btn, delete_task_btn, new_task_btn
 
     logged_in_as = ""
 
@@ -234,6 +234,7 @@ def logout():
     delete_task_btn.destroy()
     new_task_box.destroy()
     tasks_shown.destroy()
+    edit_task_box.destroy()
 
     username_box = Entry(root, width=30, textvariable = username_var)
     username_box.grid(row=0, column=0, columnspan=50, padx=2, pady=1)
