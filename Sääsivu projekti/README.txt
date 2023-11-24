@@ -1,0 +1,1 @@
+Säätiedot haettu käyttäen OpenWeatherMap API:a

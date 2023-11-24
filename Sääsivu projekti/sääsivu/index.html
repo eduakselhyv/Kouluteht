@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SuperSää</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="js" href="js/main.js" type="js">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+
+    <body id="bodytag">
+        <header>
+            <img src="img/logo.png">
+        </header>
+
+        <article>
+            <div class="kaupunki">
+                <select id="selector" onchange="muutakaupunki()"> 
+                    <option value="1">Helsinki</option>
+                    <option value="2">Tampere</option> 
+                    <option value="3">Iisalmi</option> 
+                    <option value="4">Lahti</option> 
+                    <option value="5">Heinola</option> 
+                </select>
+            </div>
+
+            <div class="tämäpäivä">
+                <div class="päiväotsikko">
+                    Tänään
+                </div>
+                <div class="päivätieto">
+                    <div class="miniotsikko">
+                        Lämpötila
+                    </div>
+
+                    <div id="u1">
+                        Valitse kaupunki!
+                    </div>
+
+                    <div class="miniotsikko">
+                        Ilmankosteus
+                    </div>
+
+                    <div id="u2">
+                        Valitse kaupunki!
+                    </div>
+
+                    <div class="miniotsikko">
+                        Tuulen nopeus
+                    </div>
+
+                    <div id="u3">
+                        Valitse kaupunki!
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            SuperSää OY
+
+            <div class="footerinfo">
+                Made as a project
+            <br>API Harjoitus
+            <br>6.11.2023-
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script src="js/main.js"></script>
